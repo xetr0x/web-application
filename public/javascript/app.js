@@ -15,19 +15,24 @@ res.onload = () => {
 
     const headline = data['headline'];
     const intro = data['intro'];
+    
 
     const p1 = document.createElement('p');
     const h1 = document.createElement('h1');
-
+    const img = document.createElement('img');
+    img.src = data['articleimage'];
     
     p1.textContent = intro;
     h1.textContent = headline;
-
     
-
+    
     document.getElementById('exercise1').appendChild(h1);
     document.getElementById('exercise1').appendChild(p1);
-
+    document.getElementById('exercise1').appendChild(img);
     
 }
+
+
+
+
 
