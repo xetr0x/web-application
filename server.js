@@ -16,4 +16,4 @@ app.use('/', indexRouter);
 
 app.listen(port);
 
-console.log('its all right fam, the server is running smoothly' + port);
+console.log('its all right fam, the server is running smoothly on localhost:' + port);

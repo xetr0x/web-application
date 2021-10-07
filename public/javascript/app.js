@@ -22,21 +22,41 @@ res.onload = () => {
     const img = document.createElement('img');
     img.src = data['articleimage'];
 
-    const button = document.createElement('button');
+    const btn = document.createElement('button');
 
-    button.textContent = "hide";
-    
+  
+
+    btn.textContent = "hide";
+
+    function ButtonHandler() {
+        var x = document.getElementById("exercise1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+    btn.onclick = ButtonHandler;
     p1.textContent = intro;
     h1.textContent = headline;
-    
-    
-    document.getElementById('exercise1').appendChild(button);
+
+  
+
+     
+
+    document.getElementById('exercise3').appendChild(btn);
     document.getElementById('exercise1').appendChild(h1);
     document.getElementById('exercise1').appendChild(p1);
     document.getElementById('exercise1').appendChild(img);
     
+ 
+
+
     
 }
+
+
  
 
 
